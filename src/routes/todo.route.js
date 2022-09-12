@@ -10,6 +10,9 @@ router.post('', todoValidator,  todoController.newTodo);
 //router to retrieve all the lists
 router.get('', todoController.gettodo);
 
+//router toget a single list
+router.get('/:_id',todoController.getlist);
+
 
 
 export default router;

@@ -30,3 +30,19 @@ export const gettodo = async (req ,res ,next) => {
      next(error);
     }
 }
+
+//to geta single list
+export const getlist = async (req, res, next) => {
+    try {
+      console.log("req.body",req.body)
+      const data = await todoService.getlist(req.params._id);
+      res.status(HttpStatus.OK).json({
+        code: HttpStatus.OK,
+        data: data,
+        message: 'List fetched successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+  

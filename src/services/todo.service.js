@@ -12,3 +12,9 @@ export const getAllDos = async () => {
     const data = await Todo.find();
     return data;
   };
+
+  //to geta single list
+  export const getlist = async (_id) => {
+    const data = await Todo.findById(_id);
+    return data;
+  };

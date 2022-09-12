@@ -167,3 +167,7 @@ info: ::ffff:127.0.0.1 - - [12/Sep/2022:11:16:16 +0000] "POST /api/v1/to-do HTTP
 
 info: ::ffff:127.0.0.1 - - [12/Sep/2022:11:16:17 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
 
+info: ::1 - - [12/Sep/2022:12:02:43 +0000] "GET /api/v1/to-do/631ebe656cc62826e433fd09 HTTP/1.1" 200 262 "-" "PostmanRuntime/7.29.2"
+
+info: ::1 - - [12/Sep/2022:12:03:31 +0000] "GET /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 200 283 "-" "PostmanRuntime/7.29.2"
+
