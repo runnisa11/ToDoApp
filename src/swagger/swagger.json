@@ -26,7 +26,7 @@
         "/to-do": {
             "post": {
                 "tags": [
-                    "Notes"
+                    "To-Do"
                 ],
                 "summary": "Create new list",
                 "produces": [],

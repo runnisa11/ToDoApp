@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import request from 'supertest';
 import mongoose from 'mongoose';
+import HttpStatus from 'http-status-codes';
 
 import app from '../../src/index';
 
@@ -30,7 +31,7 @@ describe('User APIs Test', () => {
     it('given to-do list should return 200', (done) => {
       const inputBody =  {
         "Title": "Hello",
-        "Decription": "Hey",
+        "Description": "Heyman",
         "Status": "Doing"
       }
       request(app)
