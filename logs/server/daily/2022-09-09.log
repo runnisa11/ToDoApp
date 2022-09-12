@@ -1,0 +1,25 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-09T11:24:23.398Z"}
+info: Connected to the database. {"timestamp":"2022-09-09T11:24:26.536Z"}
+error: 
+    status - 500 
+    message - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:5087:32)
+    at C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:504:27
+    at promiseOrCallback (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\helpers\promiseOrCallback.js:10:12)
+    at Mongoose._promiseOrCallback (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\index.js:1149:10)
+    at model.Model.save (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:503:35)
+    at C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:3163:16
+    at C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:3193:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:3192:15
+    at C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\model.js:3127:23)
+    at _callee$ (C:\Users\cparadise\ToDoApp\to-do\src\services\/todo.service.js:6:29)
+    at tryCatch (C:\Users\cparadise\ToDoApp\to-do\node_modules\@babel\runtime\helpers\regeneratorRuntime.js:86:17) 
+    url - /api/v1/to-do/ 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2022-09-09T12:53:25.621Z"}
