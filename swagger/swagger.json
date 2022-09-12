@@ -1,0 +1,79 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "V1",
+        "title": " To-Do App ",
+        "description": "This is the To-Do App.User can create,update,post and delete the list using that shared credentionals"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/v1/",
+    "tags": [
+        {
+            "name": "to-do list using express CLI",
+            "description": "This is the To-Do App"
+        }
+    ],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths":  {
+        "/to-do": {
+            "post": {
+                "tags": [
+                    "Notes"
+                ],
+                "summary": "Create new list",
+                "produces": [],
+                "parameters": [
+                    {
+                        "Title": "Create title",
+                        "in": "body",
+                        "Description": "Create",
+                        "schema": {
+                            "$ref": "#/definitions/To-do"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "List created successfully"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "404": {
+                        "description": "Incorrect type of list"
+                    }
+                }
+                
+            }
+        }
+    },   
+
+    "definitions": {
+        "To-do": {
+            "type": "object",
+            "properties": {
+                "Title": {
+                    "type": "string",
+                    "description": "Title of List."
+                },
+                "Description": {
+                    "type": "string",
+                    "description": "Description of List created."
+                },
+                "Status": {
+                    "type": "string",
+                    "description": "Status of the list"
+                }
+            }
+        }
+      
+    }
+}

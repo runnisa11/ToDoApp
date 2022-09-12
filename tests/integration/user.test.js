@@ -26,16 +26,20 @@ describe('User APIs Test', () => {
     done();
   });
 
-  describe('GET /users', () => {
-    it('should return empty array', (done) => {
+  describe('to-do list', () => {
+    it('given to-do list should return 200', (done) => {
+      const inputBody =  {
+        "Title": "Hello",
+        "Decription": "Hey",
+        "Status": "Doing"
+      }
       request(app)
-        .get('/api/v1/users')
+        .post('/api/v1/to-do')
+        .send(inputBody)
         .end((err, res) => {
-          expect(res.statusCode).to.be.equal(200);
-          expect(res.body.data).to.be.an('array');
-
+          expect(res.statusCode).to.be.equal(HttpStatus.CREATED);
           done();
         });
     });
-  });
+  })
 });
