@@ -9,7 +9,7 @@ describe('User APIs Test', () => {
   before((done) => {
     const clearCollections = () => {
       for (const collection in mongoose.connection.collections) {
-        mongoose.connection.collections[collection].deleteOne(() => {});
+        mongoose.connection.collections[collection].deleteOne(() => { });
       }
     };
 
@@ -29,7 +29,7 @@ describe('User APIs Test', () => {
 
   describe('to-do list', () => {
     it('given to-do list should return 200', (done) => {
-      const inputBody =  {
+      const inputBody = {
         "Title": "Hello",
         "Description": "Heyman",
         "Status": "Doing"
@@ -39,6 +39,17 @@ describe('User APIs Test', () => {
         .send(inputBody)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.CREATED);
+          done();
+        });
+    });
+  })
+
+  describe('/to-do list', () => {
+    it('given operation should retrieve all the lists of the user ', (done) => {
+      request(app)
+        .get('/api/v1/to-do')
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.OK);
           done();
         });
     });

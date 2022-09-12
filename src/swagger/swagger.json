@@ -22,11 +22,11 @@
     "produces": [
         "application/json"
     ],
-    "paths":  {
+    "paths": {
         "/to-do": {
             "post": {
                 "tags": [
-                    "To-Do"
+                    "To-Do List"
                 ],
                 "summary": "Create new list",
                 "produces": [],
@@ -51,11 +51,34 @@
                         "description": "Incorrect type of list"
                     }
                 }
-                
+            },
+            "get": {
+                "tags": [
+                    "To-Do List"
+                ],
+                "summary": "Get All The List",
+                "produces": [],
+                "parameters": [
+                    {
+                        "name": "Get Notes",
+                        "description": "Get all notes for user",
+                        "required": false
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Notes fetched successfully"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "404": {
+                        "description": "Could not fetch notes"
+                    }
+                }
             }
         }
-    },   
-
+    },
     "definitions": {
         "To-do": {
             "type": "object",
@@ -74,6 +97,5 @@
                 }
             }
         }
-      
     }
 }

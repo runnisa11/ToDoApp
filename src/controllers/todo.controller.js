@@ -15,3 +15,18 @@ export const newTodo = async (req, res, next) => {
       next(error);
     }
   };
+
+//retrieving all the data from the lists
+export const gettodo = async (req ,res ,next) => {
+    try{
+        console.log("req.body",req.body)
+        const data = await todoService.getAllDos(req.body);
+        res.status(HttpStatus.OK).json({
+        code: HttpStatus.OK,
+        data: data,
+        message: 'List fetched successfully'
+    });
+    } catch (error) {
+     next(error);
+    }
+}

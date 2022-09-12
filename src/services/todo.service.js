@@ -6,3 +6,9 @@ export const newTodo = async (body) => {
     const data = await Todo.create(body);
     return data;
   };
+
+//retrieving data from the lists
+export const getAllDos = async () => {
+    const data = await Todo.find();
+    return data;
+  };
