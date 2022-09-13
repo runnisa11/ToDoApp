@@ -10,6 +10,10 @@ router.post('', todoValidator,  todoController.newTodo);
 //router to retrieve all the lists
 router.get('', todoController.gettodo);
 
+//router to update yhe list
+router.put('/:_id',todoController.updateList);
+
+
 //router toget a single list
 router.get('/:_id',todoController.getlist);
 

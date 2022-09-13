@@ -18,3 +18,17 @@ export const getAllDos = async () => {
     const data = await Todo.findById(_id);
     return data;
   };
+
+  //to update the list
+  export const updateList = async (_id, body) => {
+    const data = await Todo.findByIdAndUpdate(
+      {
+        _id 
+      },
+      body,
+      {
+        new: true
+      }
+    );
+    return data;
+  };

@@ -45,4 +45,19 @@ export const getlist = async (req, res, next) => {
       next(error);
     }
   };
+
+  //to update the list
+  export const updateList = async (req, res ,next) => {
+    try {
+        console.log("req.body",req.body)
+        const data = await todoService.updateList(req.params._id, req.body);
+        res.status(HttpStatus.ACCEPTED).json({
+          code: HttpStatus.ACCEPTED,
+          data: data,
+          message: 'List updated successfully'
+        });
+      } catch (error) {
+        next(error);
+    }
+  }
   

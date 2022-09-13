@@ -54,4 +54,31 @@ describe('User APIs Test', () => {
         });
     });
   })
+
+  describe('/to-do list', () => {
+    it('given operation should retrieve the list of the particular id ', (done) => {
+      request(app)
+        .get('/api/v1/to-do/id')
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.OK);
+          done();
+        });
+    });
+  })
+  describe('to-do list', () => {
+    it('given token should update the given list of the particular id', (done) => {
+      const inputBody = {
+        "Title": "Heyy",
+        "Decription": "Hello"
+      }
+      request(app)
+        .put('/api/v1/to-do/id')
+        .send(inputBody)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.ACCEPTED);
+          done();
+        });
+    });
+  })
 });
+

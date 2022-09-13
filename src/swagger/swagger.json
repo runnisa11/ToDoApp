@@ -60,25 +60,85 @@
                 "produces": [],
                 "parameters": [
                     {
-                        "name": "Get Notes",
-                        "description": "Get all notes for user",
+                        "name": "Get Lists",
+                        "description": "Get all lists for user",
                         "required": false
                     }
                 ],
                 "responses": {
                     "201": {
-                        "description": "Notes fetched successfully"
+                        "description": "Lists fetched successfully"
                     },
                     "500": {
                         "description": "Internal server error"
                     },
                     "404": {
-                        "description": "Could not fetch notes"
+                        "description": "Could not fetch list"
                     }
                 }
             }
-        }
-    },
+        },
+            "/to-do/{id}": {
+                "get": {
+                    "tags": [
+                        "To-Do List"
+                    ],
+                    "summary": "Get list by ID",
+                    "produces": [],
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "in":"path",
+                            "description": "Get  list  by ID",
+                            "required": true
+                        }
+                    ],
+                    "responses": {
+                        "201": {
+                            "description": "List fetched successfully"
+                        },
+                        "500": {
+                            "description": "Internal server error"
+                        },
+                        "404": {
+                            "description": "Could not fetch list"
+                        }
+                    }
+                },
+        
+                "put": {
+                    "tags": [
+                        "To-Do List"
+                    ],
+                    "summary": "Update list by Id",
+                    "produces": [],
+                    "parameters": [
+                        {
+                            "name": "Update list",
+                            "description": "update and create list by ID",
+                            "schema": {
+                                "$ref": "#/definitions/To-do"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "201": {
+                            "description": "List updated successfully"
+                        },
+                        "500": {
+                            "description": "Internal server error"
+                        },
+                        "404": {
+                            "description": "Could not update list"
+                        }
+                    }
+                    
+                }
+            }
+
+        },
+    
+    
     "definitions": {
         "To-do": {
             "type": "object",
