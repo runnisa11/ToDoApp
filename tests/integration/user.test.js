@@ -3,6 +3,8 @@ import request from 'supertest';
 import mongoose from 'mongoose';
 import HttpStatus from 'http-status-codes';
 
+let listid;
+
 import app from '../../src/index';
 
 describe('User APIs Test', () => {
@@ -27,6 +29,7 @@ describe('User APIs Test', () => {
     done();
   });
 
+  //>>>>>>>>>>>>>CREATING NEW LIST
   describe('to-do list', () => {
     it('given to-do list should return 200', (done) => {
       const inputBody = {
@@ -44,6 +47,7 @@ describe('User APIs Test', () => {
     });
   })
 
+  //>>>>>>>>>>GET ALL THE LISTS
   describe('/to-do list', () => {
     it('given operation should retrieve all the lists of the user ', (done) => {
       request(app)
@@ -55,30 +59,34 @@ describe('User APIs Test', () => {
     });
   })
 
+  //>>>>>>>>>GET A SINGLE LIST
+
   describe('/to-do list', () => {
-    it('given operation should retrieve the list of the particular id ', (done) => {
+    it('get single list by list id should return status 200 ', (done) => {
+      
       request(app)
-        .get('/api/v1/to-do/id')
+        .get(`/api/v1/note/${listid}`)
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.OK);
+          done();
+        });
+  
+    });
+  })
+  //>>>>>>>>>>>UPDATING THE LIST
+  describe('/to-do list', () => {
+    it('given token should update the given list of the particular id', (done) => {
+      const inputBody = {
+        "Title": "Heyy",
+        "Description": "Hello"
+      };
+      request(app)
+        .put(`/api/v1/to-do/${listid}`)
+        .send(inputBody)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.OK);
           done();
         });
     });
   })
-  describe('to-do list', () => {
-    it('given token should update the given list of the particular id', (done) => {
-      const inputBody = {
-        "Title": "Heyy",
-        "Decription": "Hello"
-      }
-      request(app)
-        .put('/api/v1/to-do/id')
-        .send(inputBody)
-        .end((err, res) => {
-          expect(res.statusCode).to.be.equal(HttpStatus.ACCEPTED);
-          done();
-        });
-    });
-  })
 });
-

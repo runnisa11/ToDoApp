@@ -300,3 +300,139 @@ info: ::ffff:127.0.0.1 - - [13/Sep/2022:11:27:30 +0000] "GET /api/v1/to-do/id HT
 
 info: ::ffff:127.0.0.1 - - [13/Sep/2022:11:27:30 +0000] "PUT /api/v1/to-do/id HTTP/1.1" 500 135 "-" "node-superagent/3.8.3"
 
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "GET /api/v1/to-do/id HTTP/1.1" 500 124 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "PUT /api/v1/to-do/id HTTP/1.1" 500 135 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "GET /api/v1/to-do/_id HTTP/1.1" 500 125 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "PUT /api/v1/to-do/_id HTTP/1.1" 500 136 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "GET /api/v1/to-do/$%7Bid%7D HTTP/1.1" 500 127 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "PUT /api/v1/to-do/$%7Bid%7D HTTP/1.1" 500 138 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:57:48 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:57:48 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:58:31 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:58:31 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:01:37 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:01:37 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:04:19 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:04:19 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:53 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:54 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:54 +0000] "GET /api/v1/to-do/$%7Bid%7D HTTP/1.1" 500 127 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:54 +0000] "PUT /api/v1/to-do/$%7B_id%7D HTTP/1.1" 500 139 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:02 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:02 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:50 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:51 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:10:45 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:10:45 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "GET /api/v1/to-do/undefined HTTP/1.1" 500 131 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "PUT /api/v1/to-do/undefined HTTP/1.1" 500 142 "-" "node-superagent/3.8.3"
+
+info: ::1 - - [13/Sep/2022:13:22:10 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5131 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:12 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:12 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:24:11 +0000] "PUT /api/v1/to-do/%7Bid%7D HTTP/1.1" 500 137 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5132 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:44 +0000] "PUT /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 202 236 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:26:41 +0000] "PUT /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 202 257 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:27:15 +0000] "GET /api/v1/to-do/%7B_id%7D HTTP/1.1" 500 127 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5042 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:31:06 +0000] "GET /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 200 257 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "GET /api/v1/note/undefined HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:41 +0000] "PUT /api/v1/to-do/undefined HTTP/1.1" 500 142 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:45 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:46 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:46 +0000] "GET /api/v1/note/undefined HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:46 +0000] "PUT /api/v1/to-do/undefined HTTP/1.1" 500 142 "-" "node-superagent/3.8.3"
+

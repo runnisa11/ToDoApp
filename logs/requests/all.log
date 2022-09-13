@@ -627,3 +627,188 @@ AssertionError: expected 500 to equal 200
     at Server.emit (node:events:527:28)
     at emitCloseNT (node:net:1728:8)
     at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 16:57:30 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":616081},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18636798,"external":21539200,"heapTotal":129667072,"heapUsed":80764376,"rss":166862848},"pid":7028,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:46:51 +0000] "GET /api/v1/to-do/id HTTP/1.1" 500 124 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:16:51 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":620842},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19049085,"external":21538595,"heapTotal":137699328,"heapUsed":107754328,"rss":173436928},"pid":2152,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:52:24 +0000] "GET /api/v1/to-do/_id HTTP/1.1" 500 125 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:22:24 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621175},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18636484,"external":21538896,"heapTotal":127045632,"heapUsed":80770248,"rss":163995648},"pid":6008,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:56:25 +0000] "GET /api/v1/to-do/$%7Bid%7D HTTP/1.1" 500 127 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:26:25 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621416},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19757204,"external":21574137,"heapTotal":135725056,"heapUsed":112830848,"rss":172105728},"pid":2972,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:57:48 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:57:48 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:58:31 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:12:58:31 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:01:37 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:01:37 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:04:19 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:04:19 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:53 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:54 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:05:54 +0000] "GET /api/v1/to-do/$%7Bid%7D HTTP/1.1" 500 127 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:35:54 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621985},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18636486,"external":21538870,"heapTotal":127045632,"heapUsed":80775392,"rss":164188160},"pid":13832,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:02 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:02 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:50 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:09:51 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:10:45 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:10:45 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:14:17 +0000] "GET /api/v1/to-do/undefined HTTP/1.1" 500 131 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:69:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:44:17 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:69:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":622488},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19088914,"external":21540905,"heapTotal":122732544,"heapUsed":83941624,"rss":160055296},"pid":14564,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:69:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":69,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::1 - - [13/Sep/2022:13:22:10 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5131 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:11 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:12 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:22:12 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:24:11 +0000] "PUT /api/v1/to-do/%7Bid%7D HTTP/1.1" 500 137 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5132 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:26 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:25:44 +0000] "PUT /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 202 236 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:26:41 +0000] "PUT /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 202 257 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:27:15 +0000] "GET /api/v1/to-do/%7B_id%7D HTTP/1.1" 500 127 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-init.js HTTP/1.1" 200 5042 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:30:44 +0000] "GET /api-docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::1 - - [13/Sep/2022:13:31:06 +0000] "GET /api/v1/to-do/631ebee36cc62826e433fd0b HTTP/1.1" 200 257 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:35:40 +0000] "GET /api/v1/note/undefined HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 404 to equal 200
+AssertionError: expected 404 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:70:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 19:05:40 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":200,"message":"expected 404 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":623771},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18457481,"external":21360575,"heapTotal":129228800,"heapUsed":80396360,"rss":165806080},"pid":12884,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":70,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:45 +0000] "POST /api/v1/to-do HTTP/1.1" 201 240 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:46 +0000] "GET /api/v1/to-do HTTP/1.1" 200 236 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [13/Sep/2022:13:39:46 +0000] "GET /api/v1/note/undefined HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected 404 to equal 200
+AssertionError: expected 404 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:70:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 19:09:46 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":200,"message":"expected 404 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":624017},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18465673,"external":21368815,"heapTotal":129490944,"heapUsed":80368008,"rss":163426304},"pid":5816,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":70,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}

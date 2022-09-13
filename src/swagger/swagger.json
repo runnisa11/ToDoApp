@@ -78,33 +78,28 @@
                 }
             }
         },
-            "/to-do/{id}": {
-                "get": {
-                    "tags": [
-                        "To-Do List"
-                    ],
-                    "summary": "Get list by ID",
-                    "produces": [],
-                    "parameters": [
-                        {
-                            "name": "id",
-                            "in":"path",
-                            "description": "Get  list  by ID",
-                            "required": true
-                        }
-                    ],
-                    "responses": {
-                        "201": {
-                            "description": "List fetched successfully"
-                        },
-                        "500": {
-                            "description": "Internal server error"
-                        },
-                        "404": {
-                            "description": "Could not fetch list"
-                        }
-                    }
+        "/to-do/{_id}": {
+            "get": {
+              "tags": ["To-Do List"],
+              "summary": "Get a single list by it's id",
+              "produces": [],
+              "parameters": [
+                {
+                  "name": "_id",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "list fetched successfully"
                 },
+                "500": {
+                  "description": "Internal server error"
+                }
+              }
+            },
         
                 "put": {
                     "tags": [
@@ -114,10 +109,19 @@
                     "produces": [],
                     "parameters": [
                         {
-                            "name": "Update list",
-                            "description": "update and create list by ID",
+                            "name": "_id",
+                            "in": "path",
+                            "required": true,
+                            "type": "string"
+                          },
+                          {
+                            "name": "update list",
+                            "in": "body",
+                            "description": "update list",
+                            "required": false,
+                            "type": "string",
                             "schema": {
-                                "$ref": "#/definitions/To-do"
+                              "$ref": "#/definitions/To-do"
                             }
                         }
                     ],

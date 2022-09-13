@@ -582,3 +582,174 @@ AssertionError: expected 500 to equal 200
     at Server.emit (node:events:527:28)
     at emitCloseNT (node:net:1728:8)
     at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 16:57:30 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":616081},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18628582,"external":21530944,"heapTotal":129667072,"heapUsed":80690696,"rss":166252544},"pid":7028,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T11:27:30.593Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T12:46:47.028Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T12:46:50.332Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "id" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/id 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-13T12:46:51.590Z"}
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:16:51 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":620842},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19040869,"external":21530339,"heapTotal":137699328,"heapUsed":107685392,"rss":172851200},"pid":2152,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T12:46:51.784Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T12:52:19.929Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T12:52:23.473Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "_id" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/_id 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-13T12:52:24.810Z"}
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:22:24 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621175},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18628268,"external":21530640,"heapTotal":127045632,"heapUsed":80696616,"rss":163414016},"pid":6008,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T12:52:24.852Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T12:56:19.295Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T12:56:24.358Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "${id}" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/$%7Bid%7D 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-13T12:56:25.677Z"}
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:26:25 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621416},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19748988,"external":21565881,"heapTotal":135725056,"heapUsed":112761448,"rss":171425792},"pid":2972,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T12:56:25.887Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T12:57:43.765Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T12:57:47.083Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T12:58:27.589Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T12:58:30.612Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:01:33.457Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:01:36.528Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:04:14.590Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:04:18.120Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:05:49.426Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:05:52.747Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "${id}" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/$%7Bid%7D 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-13T13:05:54.134Z"}
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:63:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:35:54 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":621985},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18628270,"external":21530614,"heapTotal":127045632,"heapUsed":80700704,"rss":163581952},"pid":13832,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:63:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T13:05:54.180Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":63,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:08:58.368Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:09:01.618Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:09:45.821Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:09:49.935Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:10:40.889Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:10:44.313Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:14:13.025Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:14:16.273Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-13T13:14:17.612Z"}
+error: uncaughtException: expected 500 to equal 200
+AssertionError: expected 500 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:69:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 18:44:17 GMT+0530 (India Standard Time)","error":{"actual":500,"expected":200,"message":"expected 500 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:69:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":622488},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":19080698,"external":21532649,"heapTotal":122732544,"heapUsed":83614768,"rss":159379456},"pid":14564,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 500 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:69:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T13:14:17.657Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":69,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:22:02.023Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:22:02.097Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: '{id}' }" (type Object) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/%7Bid%7D 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2022-09-13T13:24:11.487Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:25:17.490Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:25:17.529Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{_id}" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/%7B_id%7D 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2022-09-13T13:27:15.781Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:30:31.728Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:30:31.777Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:34:30.106Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:34:30.162Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:35:14.442Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:35:14.474Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:35:35.805Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:35:39.372Z"}
+error: uncaughtException: expected 404 to equal 200
+AssertionError: expected 404 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:70:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 19:05:40 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":200,"message":"expected 404 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":623771},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18457457,"external":21360511,"heapTotal":129228800,"heapUsed":80299776,"rss":165183488},"pid":12884,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T13:35:40.938Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":70,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-13T13:39:41.121Z"}
+info: Connected to the database. {"timestamp":"2022-09-13T13:39:44.896Z"}
+error: uncaughtException: expected 404 to equal 200
+AssertionError: expected 404 to equal 200
+    at Test.<anonymous> (C:\Users\cparadise\ToDoApp\to-do\tests\integration\/user.test.js:70:40)
+    at Test.assert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\cparadise\ToDoApp\to-do\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:641:28)
+    at Server.emit (node:events:527:28)
+    at emitCloseNT (node:net:1728:8)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) {"date":"Tue Sep 13 2022 19:09:46 GMT+0530 (India Standard Time)","error":{"actual":404,"expected":200,"message":"expected 404 to equal 200","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":624017},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\mocha\\bin\\mocha","--exit","--recursive","--require","@babel/register","--timeout=5000","tests/**/*.js"],"cwd":"C:\\Users\\cparadise\\ToDoApp\\to-do","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18457457,"external":21360559,"heapTotal":129490944,"heapUsed":80286352,"rss":163020800},"pid":5816,"uid":null,"version":"v16.15.1"},"stack":"AssertionError: expected 404 to equal 200\n    at Test.<anonymous> (C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js:70:40)\n    at Test.assert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:641:28)\n    at Server.emit (node:events:527:28)\n    at emitCloseNT (node:net:1728:8)\n    at processTicksAndRejections (node:internal/process/task_queues:82:21)","timestamp":"2022-09-13T13:39:46.472Z","trace":[{"column":40,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\tests\\integration\\/user.test.js","function":null,"line":70,"method":null,"native":false},{"column":6,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\cparadise\\ToDoApp\\to-do\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":641,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":527,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":1728,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":82,"method":null,"native":false}]}
