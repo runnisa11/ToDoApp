@@ -11,8 +11,8 @@ const todoSchema = new Schema(
       required: true,
     },
     Status: {
-      type :String,
-      required :true,
+      type: String,
+      required: true,
     }
   },
   {

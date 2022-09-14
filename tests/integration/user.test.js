@@ -61,21 +61,21 @@ describe('User APIs Test', () => {
 
   //>>>>>>>>>GET A SINGLE LIST
 
-  describe('/to-do list', () => {
+  describe('/to-do/_id', () => {
     it('get single list by list id should return status 200 ', (done) => {
-      
+
       request(app)
         .get(`/api/v1/note/${listid}`)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.OK);
           done();
         });
-  
+
     });
   })
   //>>>>>>>>>>>UPDATING THE LIST
-  describe('/to-do list', () => {
-    it('given token should update the given list of the particular id', (done) => {
+  describe('/to-do/_id', () => {
+    it('given operation should update the given list of the particular id', (done) => {
       const inputBody = {
         "Title": "Heyy",
         "Description": "Hello"
@@ -89,4 +89,18 @@ describe('User APIs Test', () => {
         });
     });
   })
+
+  //>>>>>>>>>DELETE THE LIST
+  describe('/notes/_id', () => {
+    it('given operation should delete the list of the particular id ', (done) => {
+      request(app)
+        .delete('/api/v1/to-do/:id')
+        .end((err, res) => {
+          expect(res.statusCode).to.be.equal(HttpStatus.ACCEPTED);
+          done();
+        });
+    });
+  })
 });
+
+

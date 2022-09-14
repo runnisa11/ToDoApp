@@ -32,3 +32,10 @@ export const getAllDos = async () => {
     );
     return data;
   };
+
+  //>>>>>>>to delete the list
+  export const deleteList = async (id) => {
+    await Todo.findByIdAndDelete(id);
+    return '';
+  };
+  
