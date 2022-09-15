@@ -1,0 +1,154 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:09:33.005Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:09:36.844Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:09:38.584Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined' }" (type Object) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:09:38.866Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "${lisid" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/$%7Blisid 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:09:38.941Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:12:44.239Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:12:47.802Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:12:49.076Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined' }" (type Object) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:12:49.181Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "${lisid" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/$%7Blisid 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:12:49.232Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:15:34.263Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:15:38.095Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:15:39.715Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined' }" (type Object) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:15:39.858Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "${lisid" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/$%7Blisid 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:15:39.919Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:17:48.396Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:17:51.665Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:18:46.867Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:18:50.109Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:22:30.565Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:22:35.792Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:23:40.494Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:23:45.792Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:24:02.850Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:24:06.264Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:24:23.487Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:24:26.743Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:27:59.570Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:28:06.276Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:28:21.359Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:28:30.301Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:28:31.475Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2022-09-15T06:28:48.050Z"}
+info: Connected to the database. {"timestamp":"2022-09-15T06:28:57.933Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - GET 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:28:58.141Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "{ _id: 'undefined' }" (type Object) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - PUT 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:28:58.269Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "todo"
+    at model.Query.exec (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\cparadise\ToDoApp\to-do\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) 
+    url - /api/v1/to-do/undefined 
+    method - DELETE 
+    IP - ::ffff:127.0.0.1
+   {"timestamp":"2022-09-15T06:28:58.313Z"}

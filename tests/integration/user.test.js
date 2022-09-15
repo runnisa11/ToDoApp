@@ -42,6 +42,7 @@ describe('User APIs Test', () => {
         .send(inputBody)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.CREATED);
+          listid = res.body.data._id;;
           done();
         });
     });
@@ -54,6 +55,7 @@ describe('User APIs Test', () => {
         .get('/api/v1/to-do')
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.OK);
+        
           done();
         });
     });
@@ -65,7 +67,7 @@ describe('User APIs Test', () => {
     it('get single list by list id should return status 200 ', (done) => {
 
       request(app)
-        .get(`/api/v1/note/${listid}`)
+        .get(`/api/v1/to-do/${listid}`)
         .end((err, res) => {
           expect(res.statusCode).to.be.equal(HttpStatus.OK);
           done();
@@ -84,19 +86,19 @@ describe('User APIs Test', () => {
         .put(`/api/v1/to-do/${listid}`)
         .send(inputBody)
         .end((err, res) => {
-          expect(res.statusCode).to.be.equal(HttpStatus.OK);
+          expect(res.statusCode).to.be.equal(HttpStatus.ACCEPTED);
           done();
         });
     });
   })
 
   //>>>>>>>>>DELETE THE LIST
-  describe('/notes/_id', () => {
+  describe('/to-do/_id', () => {
     it('given operation should delete the list of the particular id ', (done) => {
       request(app)
-        .delete('/api/v1/to-do/:id')
+        .delete(`/api/v1/to-do/${listid}`)
         .end((err, res) => {
-          expect(res.statusCode).to.be.equal(HttpStatus.ACCEPTED);
+          expect(res.statusCode).to.be.equal(HttpStatus.OK);
           done();
         });
     });

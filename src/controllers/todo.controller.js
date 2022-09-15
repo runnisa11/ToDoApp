@@ -1,7 +1,7 @@
 import HttpStatus from 'http-status-codes';
 import * as todoService from '../services/todo.service';
 
-// creating a new to-do list
+//>>>>>>>>> creating a new to-do list
 export const newTodo = async (req, res, next) => {
     try {
         console.log("req.body", req.body)
@@ -16,7 +16,7 @@ export const newTodo = async (req, res, next) => {
     }
 };
 
-//retrieving all the data from the lists
+//>>>>>>>>>retrieving all the data from the lists
 export const gettodo = async (req, res, next) => {
     try {
         console.log("req.body", req.body)
@@ -31,7 +31,7 @@ export const gettodo = async (req, res, next) => {
     }
 }
 
-//to geta single list
+//>>>>>>>to geta single list
 export const getlist = async (req, res, next) => {
     try {
         console.log("req.body", req.body)
@@ -46,7 +46,7 @@ export const getlist = async (req, res, next) => {
     }
 };
 
-//to update the list
+//>>>>>>>>to update the list
 export const updateList = async (req, res, next) => {
     try {
         console.log("req.body", req.body)
